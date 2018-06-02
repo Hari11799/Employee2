@@ -29,16 +29,12 @@ public static void main(String[] args)
 	System.out.println("Enter the count of employee");
 	size=in.nextInt();
 	Detail dt[]=new Detail[size];
-	for(i=0;i<size;i++)
-	{
-	dt[i]=new Detail();
-	dt[i].input();
-	}
+	
 ins=size;
 while(count!=1)
 {
 	
-	System.out.print(" 1-Sorting\n 2-Maximum and minimum salary\n 3-specific amount details\n 4-Display\n 5-Stop");
+	System.out.print(" 1-Sorting\n 2-Maximum and minimum salary\n 3-specific amount details\n 4-Display\n 5-Stop 6-input");
 	ch=in.nextInt();
 switch(ch)
 {
@@ -114,7 +110,16 @@ break;
 case 5:
 	count=1;
 break;
+case 6:
+{
+for(i=0;i<size;i++)
+	{
+	dt[i]=new Detail();
+	dt[i].input();
 	}
+}
+	}
+
 }
 	
 }
